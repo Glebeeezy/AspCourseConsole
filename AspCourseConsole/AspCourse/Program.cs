@@ -43,7 +43,8 @@
         HighAndLow(first);
         HighAndLow(second);
         HighAndLow(third);
-
+        Console.WriteLine("Введите набор чисел через пробел и узнайте большее и меньшее из них");
+        HighAndLow(Console.ReadLine());
         // Fourth exercise
         Console.WriteLine("Четвёртое задание");
         bool isIsogram (string str)
@@ -72,8 +73,11 @@
         string firstIso = "Dermatoglyphics";
         string secondIso = "moose";
         string thirdIso = "aba";
-
         Console.Write($"{isIsogram(firstIso)}\n{isIsogram(secondIso)}\n{isIsogram(thirdIso)}\n");
+        Console.WriteLine("Введите слово что бы узнать является ли оно изограммой");
+        Console.WriteLine(isIsogram(Console.ReadLine()));
+
+
         // Fifth exercise
         Console.WriteLine("Пятое задание");
         void accum(string str)
@@ -101,6 +105,8 @@
         accum(accum1);
         accum(accum2);
         accum(accum3);
+        Console.WriteLine("Введите слово");
+        accum(Console.ReadLine());
 
     }
 }
